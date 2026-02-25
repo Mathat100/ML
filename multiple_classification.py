@@ -40,7 +40,7 @@ with st.sidebar:
     if st.button('Predict'):
         stress_predict = stress_model.predict([[
             float(Age),
-            float(Gender)
+            float(Gender),
             float(Occupation),
             float(Device_Type),
             float(Daily_Phone_Hours),
