@@ -35,7 +35,7 @@ with st.sidebar:
 
    
     
-    stress_predict = ''
+    Stress_predict = ''
     
     if st.button('Predict'):
         stress_predict = stress_model.predict([[
@@ -52,9 +52,9 @@ with st.sidebar:
             float(Weekend_Screen_Time_Hours),
         ]])
         
-    st.success(stress_predict)
+    st.success(Stress_predict)
 
-    if(selected == 'RidingMower'):
+    if(selected == 'LOAN'):
     st.title('RidingMower Prediction')
     
     #user input
