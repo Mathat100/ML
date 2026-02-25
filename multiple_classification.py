@@ -18,7 +18,7 @@ with st.sidebar:
     selected = option_menu('Classification',['LOAN','RidingMower','Stress'])
 
     if(selected == 'Stress'):
-    st.title('Stress Prediction')
+      st.title('Stress Prediction')
     
     #user input
     Age = st.text_input('Age')
@@ -55,7 +55,7 @@ with st.sidebar:
     st.success(Stress_predict)
 
     if(selected == 'LOAN'):
-    st.title('RidingMower Prediction')
+      st.title('RidingMower Prediction')
     
     #user input
     Income = st.text_input('Income')
