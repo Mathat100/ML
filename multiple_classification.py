@@ -39,17 +39,17 @@ with st.sidebar:
     
     if st.button('Predict'):
         stress_predict = stress_model.predict([[
-            float(Age),
-            float(Gender)
-            float(Occupation),
-            float(Device_Type),
-            float(Daily_Phone_Hours),
-            float(Social_Media_Hours),
-            float(Work_Productivity_Score),
-            float(Sleep_Hours),
-            float(App_Usage_Count),
-            float(Caffeine_Intake_Cups),
-            float(Weekend_Screen_Time_Hours),
+          float(Age),
+          float(Gender)
+          float(Occupation),
+          float(Device_Type),
+          float(Daily_Phone_Hours),
+          float(Social_Media_Hours),
+          float(Work_Productivity_Score),
+          float(Sleep_Hours),
+          float(App_Usage_Count),
+          float(Caffeine_Intake_Cups),
+          float(Weekend_Screen_Time_Hours),
         ]])
         
     st.success(Stress_predict)
